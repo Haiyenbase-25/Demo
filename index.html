@@ -617,7 +617,7 @@
         <div class="content-inner">
           
     <!-- ==================== TAB: TỔNG QUAN ==================== -->
-    <div class="tab-content active" id="tab-overview">
+        <div class="tab-content active" id="tab-overview">
       <div class="main-card">
         <!-- Page Title & Filters -->
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 2px solid #e5e7eb;">
@@ -633,91 +633,224 @@
               <option>Chi nhánh: TP.HCM</option>
               <option>Chi nhánh: Hà Nội</option>
             </select>
-            <select class="filter-select" style="background: #dbeafe; border: 1px solid #93c5fd; border-radius: 999px; padding: 6px 12px; font-size: 0.82rem; color: #1e40af; font-weight: 600; cursor: pointer;">
-              <option>Hãng tàu: ALL</option>
-              <option>Hãng tàu: Maersk</option>
-              <option>Hãng tàu: MSC</option>
-            </select>
           </div>
         </div>
 
-        <!-- Overview Summary -->
-        <div class="overview-summary">
-          <div class="summary-block mnr">
-            <div class="summary-icon">🔧</div>
-            <div class="summary-title">Mảng MnR</div>
-            <div class="summary-value" style="color: var(--accent-mnr);">2.45 tỷ</div>
-            <div class="summary-sub">Doanh thu tháng | +12% vs cùng kỳ</div>
-            <div style="margin-top: 12px;">
-              <div class="progress-bar">
-                <div class="progress-fill mnr" style="width: 78%;"></div>
-              </div>
-              <div style="font-size: 0.75rem; color: var(--text-sub); margin-top: 4px;">78% KPI</div>
-            </div>
+        <!-- KPI Cards Row -->
+        <div class="kpi-grid" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 20px;">
+          <div class="kpi-card" style="background: linear-gradient(135deg, #d1fae5 0%, #ffffff 100%); border-left: 4px solid #10b981;">
+            <div class="kpi-tooltip">Chi tiết: KD-Thương vụ: 1.278 tỷ | Khai thác: 2.122 tỷ | MnR: 0.477 tỷ</div>
+            <div class="kpi-label" style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 4px;">DOANH THU</div>
+            <div class="kpi-value" style="font-size: 2.5rem; font-weight: 700; color: #10b981; margin: 4px 0;">3.877 tỷ</div>
+            <div class="kpi-sub" style="font-size: 0.75rem; color: #9ca3af;">Tổng doanh thu tháng</div>
+            <div style="margin-top: 8px; font-size: 0.75rem; color: #10b981; font-weight: 600;">+8.5% ▲ so với tháng trước</div>
           </div>
-          <div class="summary-block qlr">
-            <div class="summary-icon">📦</div>
-            <div class="summary-title">Mảng Quản lý Rỗng</div>
-            <div class="summary-value" style="color: var(--accent-qlr);">8,450 cont</div>
-            <div class="summary-sub">Tổng xuất/nhập tháng | +5% vs cùng kỳ</div>
-            <div style="margin-top: 12px;">
-              <div class="progress-bar">
-                <div class="progress-fill qlr" style="width: 92%;"></div>
-              </div>
-              <div style="font-size: 0.75rem; color: var(--text-sub); margin-top: 4px;">92% KPI</div>
-            </div>
+          <div class="kpi-card" style="background: linear-gradient(135deg, #dbeafe 0%, #ffffff 100%); border-left: 4px solid #3b82f6;">
+            <div class="kpi-tooltip">Doanh thu: 3.877 tỷ | Chi phí: 2.632 tỷ | Tỷ lệ lợi nhuận: 32.1%</div>
+            <div class="kpi-label" style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 4px;">LỢI NHUẬN</div>
+            <div class="kpi-value" style="font-size: 2.5rem; font-weight: 700; color: #3b82f6; margin: 4px 0;">1.245 tỷ</div>
+            <div class="kpi-sub" style="font-size: 0.75rem; color: #9ca3af;">Lợi nhuận ròng</div>
+            <div style="margin-top: 8px; font-size: 0.75rem; color: #10b981; font-weight: 600;">+12.3% ▲ so với tháng trước</div>
           </div>
-          <div class="summary-block kt">
-            <div class="summary-icon">⚓</div>
-            <div class="summary-title">Mảng Khai thác</div>
-            <div class="summary-value" style="color: var(--accent-kt);">156 chuyến</div>
-            <div class="summary-sub">Sà lan vận hành | +8% vs cùng kỳ</div>
-            <div style="margin-top: 12px;">
-              <div class="progress-bar">
-                <div class="progress-fill kt" style="width: 85%;"></div>
-              </div>
-              <div style="font-size: 0.75rem; color: var(--text-sub); margin-top: 4px;">85% KPI</div>
-            </div>
+          <div class="kpi-card" style="background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%); border-left: 4px solid #f59e0b;">
+            <div class="kpi-tooltip">Nhân công: 1.2 tỷ | Vật tư: 0.8 tỷ | Vận hành: 0.632 tỷ</div>
+            <div class="kpi-label" style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 4px;">CHI PHÍ</div>
+            <div class="kpi-value" style="font-size: 2.5rem; font-weight: 700; color: #f59e0b; margin: 4px 0;">2.632 tỷ</div>
+            <div class="kpi-sub" style="font-size: 0.75rem; color: #9ca3af;">Tổng chi phí hoạt động</div>
+            <div style="margin-top: 8px; font-size: 0.75rem; color: #ef4444; font-weight: 600;">+5.2% ▲ so với tháng trước</div>
+          </div>
+          <div class="kpi-card" style="background: linear-gradient(135deg, #e0e7ff 0%, #ffffff 100%); border-left: 4px solid #8b5cf6;">
+            <div class="kpi-tooltip">KH VIP: 15 | KH thường xuyên: 42 | KH mới: 5 | KH tiềm năng: 65</div>
+            <div class="kpi-label" style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 4px;">KHÁCH HÀNG</div>
+            <div class="kpi-value" style="font-size: 2.5rem; font-weight: 700; color: #8b5cf6; margin: 4px 0;">127</div>
+            <div class="kpi-sub" style="font-size: 0.75rem; color: #9ca3af;">Tổng số khách hàng</div>
+            <div style="margin-top: 8px; font-size: 0.75rem; color: #10b981; font-weight: 600;">+5 khách hàng mới</div>
           </div>
         </div>
 
-        <!-- Charts Row -->
-        <div class="section-row">
+        <!-- Row 1: Doanh thu/Lợi nhuận/Chi phí + Sản lượng -->
+        <div class="section-row" style="grid-template-columns: 1.5fr 1fr; margin-bottom: 20px;">
+          <!-- Doanh thu - Lợi nhuận - Chi phí theo thời gian -->
           <div class="card">
             <div class="card-header">
-              <div class="card-title">Doanh thu theo mảng</div>
-              <div class="badge">Tháng 01/2026</div>
+              <div>
+                <div class="card-title" style="color: #1f2937; font-weight: 600;">DOANH THU - LỢI NHUẬN - CHI PHÍ THEO THỜI GIAN</div>
+                <div style="font-size: 0.7rem; color: #9ca3af; margin-top: 2px;">Xu hướng 12 tháng gần nhất</div>
+              </div>
             </div>
-            <div class="chart-container" id="chart-revenue-overview"></div>
+            <div style="display: flex; gap: 12px; padding: 0 16px 8px; font-size: 0.75rem;">
+              <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 14px; height: 14px; background: #10b981; border-radius: 2px;"></span> Doanh thu</span>
+              <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 14px; height: 14px; background: #3b82f6; border-radius: 2px;"></span> Lợi nhuận</span>
+              <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 14px; height: 14px; background: #f59e0b; border-radius: 2px;"></span> Chi phí</span>
+            </div>
+            <div class="chart-container" id="chart-overview-revenue" style="height: 280px;"></div>
           </div>
+
+          <!-- Sản lượng so với kỳ trước -->
           <div class="card">
             <div class="card-header">
-              <div class="card-title">So sánh KPI 3 mảng</div>
-              <div class="badge">Target vs Actual</div>
+              <div>
+                <div class="card-title" style="color: #1f2937; font-weight: 600;">SẢN LƯỢNG SO VỚI KỲ TRƯỚC</div>
+                <div style="font-size: 0.7rem; color: #9ca3af; margin-top: 2px;">Tháng 01/2026 vs Tháng 12/2025</div>
+              </div>
             </div>
-            <div class="chart-container" id="chart-kpi-comparison"></div>
+            <div class="chart-container" id="chart-overview-volume" style="height: 320px;"></div>
           </div>
         </div>
 
-        <!-- Alerts Section -->
-        <div class="alerts-section">
-          <h3 style="font-size: 0.9rem; margin-bottom: 12px; color: var(--text-sub);">⚠️ Cảnh báo & Thông báo</h3>
-          <div class="alert-item">
-            <span class="alert-icon">🔧</span>
-            <span class="alert-text"><strong>MnR:</strong> 12 cont sửa chữa quá hạn > 7 ngày cần xử lý</span>
-            <span class="alert-time">2 giờ trước</span>
+        <!-- Row 2: Tỷ trọng doanh thu + Top khách hàng -->
+        <div class="section-row" style="grid-template-columns: 1fr 1fr; margin-bottom: 20px;">
+          <!-- Tỷ trọng doanh thu theo mảng -->
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <div class="card-title" style="color: #1f2937; font-weight: 600;">TỶ TRỌNG DOANH THU THEO MẢNG</div>
+                <div style="font-size: 0.7rem; color: #9ca3af; margin-top: 2px;">So sánh kỳ trước (màu nhạt) vs kỳ này (màu đậm)</div>
+              </div>
+            </div>
+            <div class="chart-container" id="chart-overview-revenue-mix" style="height: 300px;"></div>
           </div>
-          <div class="alert-item warning">
-            <span class="alert-icon">📦</span>
-            <span class="alert-text"><strong>QLR:</strong> Bãi A đạt 95% công suất, cần điều phối</span>
-            <span class="alert-time">30 phút trước</span>
-          </div>
-          <div class="alert-item warning">
-            <span class="alert-icon">⚓</span>
-            <span class="alert-text"><strong>Khai thác:</strong> Sà lan SL-05 delay 2 tiếng do thời tiết</span>
-            <span class="alert-time">1 giờ trước</span>
+
+          <!-- Top 10 khách hàng -->
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <div class="card-title" style="color: #1f2937; font-weight: 600;">TOP 10 KHÁCH HÀNG DOANH THU CAO NHẤT</div>
+                <div style="font-size: 0.7rem; color: #9ca3af; margin-top: 2px;">Tỷ trọng & doanh thu tháng 01/2026</div>
+              </div>
+            </div>
+            <div class="chart-container" id="chart-overview-top-customers" style="height: 300px;"></div>
           </div>
         </div>
+
+        <!-- Row 3: Bảng chi tiết phân bổ doanh thu -->
+        <div class="section-row" style="grid-template-columns: 1fr; margin-bottom: 20px;">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <div class="card-title" style="color: #1f2937; font-weight: 600;">CHI TIẾT PHÂN BỔ DOANH THU</div>
+                <div style="font-size: 0.7rem; color: #9ca3af; margin-top: 2px;">Breakdown theo mảng kinh doanh & dịch vụ</div>
+              </div>
+            </div>
+            <div style="overflow-x: auto;">
+              <table style="width: 100%; font-size: 0.85rem;">
+                <thead>
+                  <tr style="background: #f9fafb;">
+                    <th style="padding: 12px; text-align: left; font-weight: 600; color: #6b7280; border-bottom: 2px solid #e5e7eb;">MẢNG KINH DOANH</th>
+                    <th style="padding: 12px; text-align: left; font-weight: 600; color: #6b7280; border-bottom: 2px solid #e5e7eb;">DỊCH VỤ</th>
+                    <th style="padding: 12px; text-align: right; font-weight: 600; color: #6b7280; border-bottom: 2px solid #e5e7eb;">SẢN LƯỢNG</th>
+                    <th style="padding: 12px; text-align: right; font-weight: 600; color: #6b7280; border-bottom: 2px solid #e5e7eb;">DOANH THU (TỶ)</th>
+                    <th style="padding: 12px; text-align: center; font-weight: 600; color: #6b7280; border-bottom: 2px solid #e5e7eb;">TỶ TRỌNG</th>
+                    <th style="padding: 12px; text-align: center; font-weight: 600; color: #6b7280; border-bottom: 2px solid #e5e7eb;">TĂNG TRƯỞNG</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid #f3f4f6; background: rgba(16, 185, 129, 0.05);">
+                    <td style="padding: 12px; font-weight: 600; color: #10b981;" rowspan="4">Kinh doanh - Thương vụ</td>
+                    <td style="padding: 12px;">Cáp rỗng</td>
+                    <td style="padding: 12px; text-align: right;">642</td>
+                    <td style="padding: 12px; text-align: right; font-weight: 600;">0.856</td>
+                    <td style="padding: 12px; text-align: center;">22.1%</td>
+                    <td style="padding: 12px; text-align: center; color: #10b981; font-weight: 600;">+8.2% ▲</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #f3f4f6; background: rgba(16, 185, 129, 0.05);">
+                    <td style="padding: 12px;">Hạ hàng</td>
+                    <td style="padding: 12px; text-align: right;">351</td>
+                    <td style="padding: 12px; text-align: right; font-weight: 600;">0.234</td>
+                    <td style="padding: 12px; text-align: center;">6.0%</td>
+                    <td style="padding: 12px; text-align: center; color: #10b981; font-weight: 600;">+5.1% ▲</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #f3f4f6; background: rgba(16, 185, 129, 0.05);">
+                    <td style="padding: 12px;">Dịch vụ khác</td>
+                    <td style="padding: 12px; text-align: right;">9</td>
+                    <td style="padding: 12px; text-align: right; font-weight: 600;">0.012</td>
+                    <td style="padding: 12px; text-align: center;">0.3%</td>
+                    <td style="padding: 12px; text-align: center; color: #ef4444; font-weight: 600;">-2.1% ▼</td>
+                  </tr>
+                  <tr style="border-bottom: 2px solid #e5e7eb; background: rgba(16, 185, 129, 0.05);">
+                    <td style="padding: 12px;">Trucking</td>
+                    <td style="padding: 12px; text-align: right;">276</td>
+                    <td style="padding: 12px; text-align: right; font-weight: 600;">0.176</td>
+                    <td style="padding: 12px; text-align: center;">4.5%</td>
+                    <td style="padding: 12px; text-align: center; color: #10b981; font-weight: 600;">+6.8% ▲</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #f3f4f6; background: rgba(59, 130, 246, 0.05);">
+                    <td style="padding: 12px; font-weight: 600; color: #3b82f6;" rowspan="3">Khai thác</td>
+                    <td style="padding: 12px;">Sà lan cont rỗng</td>
+                    <td style="padding: 12px; text-align: right;">1,129</td>
+                    <td style="padding: 12px; text-align: right; font-weight: 600;">1.468</td>
+                    <td style="padding: 12px; text-align: center;">37.9%</td>
+                    <td style="padding: 12px; text-align: center; color: #10b981; font-weight: 600;">+10.2% ▲</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #f3f4f6; background: rgba(59, 130, 246, 0.05);">
+                    <td style="padding: 12px;">Sà lan cont hàng</td>
+                    <td style="padding: 12px; text-align: right;">547</td>
+                    <td style="padding: 12px; text-align: right; font-weight: 600;">0.428</td>
+                    <td style="padding: 12px; text-align: center;">11.0%</td>
+                    <td style="padding: 12px; text-align: center; color: #10b981; font-weight: 600;">+7.5% ▲</td>
+                  </tr>
+                  <tr style="border-bottom: 2px solid #e5e7eb; background: rgba(59, 130, 246, 0.05);">
+                    <td style="padding: 12px;">Hàng rời</td>
+                    <td style="padding: 12px; text-align: right;">446</td>
+                    <td style="padding: 12px; text-align: right; font-weight: 600;">0.226</td>
+                    <td style="padding: 12px; text-align: center;">5.8%</td>
+                    <td style="padding: 12px; text-align: center; color: #10b981; font-weight: 600;">+9.3% ▲</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #f3f4f6; background: rgba(249, 115, 22, 0.05);">
+                    <td style="padding: 12px; font-weight: 600; color: #f97316;">MnR - Sửa chữa cont</td>
+                    <td style="padding: 12px;">Sửa chữa</td>
+                    <td style="padding: 12px; text-align: right;">477</td>
+                    <td style="padding: 12px; text-align: right; font-weight: 600;">0.477</td>
+                    <td style="padding: 12px; text-align: center;">12.3%</td>
+                    <td style="padding: 12px; text-align: center; color: #10b981; font-weight: 600;">+11.5% ▲</td>
+                  </tr>
+                  <tr style="background: #f9fafb; font-weight: 700;">
+                    <td style="padding: 12px;" colspan="2">TỔNG CỘNG</td>
+                    <td style="padding: 12px; text-align: right;">3,877</td>
+                    <td style="padding: 12px; text-align: right; color: #10b981;">3.877</td>
+                    <td style="padding: 12px; text-align: center;">100%</td>
+                    <td style="padding: 12px; text-align: center; color: #10b981;">+8.5% ▲</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- % Đạt kế hoạch -->
+        <div class="section-row" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
+          <div class="card" style="background: linear-gradient(135deg, #d1fae5 0%, #ffffff 100%); text-align: center; padding: 24px;">
+            <div style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px;">Kinh doanh - Thương vụ</div>
+            <div style="font-size: 3rem; font-weight: 700; color: #10b981; margin: 8px 0;">92%</div>
+            <div style="font-size: 0.85rem; color: #9ca3af;">Đạt kế hoạch doanh thu</div>
+            <div style="margin-top: 12px;">
+              <div class="progress-bar" style="height: 12px;">
+                <div class="progress-fill" style="width: 92%; background: #10b981;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="background: linear-gradient(135deg, #dbeafe 0%, #ffffff 100%); text-align: center; padding: 24px;">
+            <div style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px;">Khai thác</div>
+            <div style="font-size: 3rem; font-weight: 700; color: #3b82f6; margin: 8px 0;">88%</div>
+            <div style="font-size: 0.85rem; color: #9ca3af;">Đạt kế hoạch doanh thu</div>
+            <div style="margin-top: 12px;">
+              <div class="progress-bar" style="height: 12px;">
+                <div class="progress-fill" style="width: 88%; background: #3b82f6;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="background: linear-gradient(135deg, #fed7aa 0%, #ffffff 100%); text-align: center; padding: 24px;">
+            <div style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px;">MnR - Sửa chữa</div>
+            <div style="font-size: 3rem; font-weight: 700; color: #f97316; margin: 8px 0;">95%</div>
+            <div style="font-size: 0.85rem; color: #9ca3af;">Đạt kế hoạch doanh thu</div>
+            <div style="margin-top: 12px;">
+              <div class="progress-bar" style="height: 12px;">
+                <div class="progress-fill" style="width: 95%; background: #f97316;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -2792,4 +2925,5 @@
   </script>
 </body>
 </html>
+
 
